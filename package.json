@@ -1,0 +1,19 @@
+{
+  "name": "esbuild_custom",
+  "version": "0.0.1",
+  "description": "Barebones ESBuild and test node server implementation. For building",
+  "main": "app.js",
+  "scripts": {
+    "start": "node node_server/server.js",
+    "build": "node bundler/bundler.js",
+    "test": "node bundler/bundler.js && node node_server/server.js"
+  },
+  "keywords": [
+    "esbuild"
+  ],
+  "author": "Joshua Brewster",
+  "license": "AGPL-3.0-or-later",
+  "dependencies": {
+    "esbuild": "^0.14.21"
+  }
+}
