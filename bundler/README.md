@@ -50,7 +50,7 @@ e.g.
         "preserveConstEnums": true,
         "sourceMap": true
     },
-    "include": ["src/** /*"], //remove the space after ** (that's for here in comments)
+    "include": ["src/**/*"], 
     "exclude": ["node_modules"]
     }
 ```
