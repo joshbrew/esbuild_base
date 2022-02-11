@@ -16,4 +16,10 @@ To test:
 
 `npm run pwa` 
 
-This installs workbox-cli, generates the service worker, and then starts the application. Run once if you don't need to modify the service-worker further.
+This installs workbox-cli, generates the service worker, bundles and then starts the application. Run once if you don't need to modify the service-worker further.
+
+
+
+### Other notes:
+
+See README.md files in each folder for more explanation on how to work with these types of applications.
