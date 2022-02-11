@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node node_server/server.js",
     "build": "node bundler/bundler.js",
-    "test": "node bundler/bundler.js && node node_server/server.js"
+    "test": "node bundler/bundler.js && node node_server/server.js",
+    "pwa": "npm i workbox-cli && workbox generateSW bundler/pwa/workbox-config.js && npm run build && npm start"
   },
   "keywords": [
     "esbuild"

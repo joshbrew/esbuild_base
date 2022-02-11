@@ -7,3 +7,13 @@ OR `npm test` to run both commands in sequence
 You can specify https and add an ssl certificate if you follow the instructions.
 
 Exactly 1 dependency: esbuild
+
+
+
+### PWA build:
+
+To test:
+
+`npm run pwa` 
+
+This installs workbox-cli, generates the service worker, and then starts the application. Run once if you don't need to modify the service-worker further.
