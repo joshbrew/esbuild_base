@@ -44,7 +44,7 @@ e.g.
 ```json
     {
     "compilerOptions": {
-        "module": "commonjs",
+        "module": "commonjs", //'ESNEXT', 'ES2020', 'ES2018', 'ES5', 'ES6', etc.
         "noImplicitAny": true,
         "removeComments": true,
         "preserveConstEnums": true,
