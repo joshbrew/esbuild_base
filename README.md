@@ -19,6 +19,15 @@ To test:
 This installs workbox-cli, generates the service worker, bundles and then starts the application. Run once if you don't need to modify the service-worker further.
 
 
+### Backend hot reloading (when editing src)
+
+`npm run dev` or `npm i --save-dev nodemon && nodemon node_server/server.js`
+
+then `npm run startdev` to use nodemon 
+
+And in `package.json` change the `node node_server/server.js` to `nodemon node_server/server.js`
+
+
 
 ### Other notes:
 
