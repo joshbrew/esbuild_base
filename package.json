@@ -26,6 +26,10 @@
   "nodemonConfig": {
     "env": {
       "NODEMON":true
-    }
+    },
+    "events": {
+      "restart": "npm run build"
+    },
+    "ignore": ["dist/"]
   }
 }
