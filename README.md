@@ -10,7 +10,7 @@ You can specify https and add an ssl certificate if you follow the instructions.
 
 ## Hot reloading (for dev)
 
-`npm run dev` or `npm i --save-dev nodemon && nodemon node_server/server.js`
+`npm run dev`
 
 then `npm run startdev` 
 
