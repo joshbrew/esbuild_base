@@ -12,6 +12,7 @@ const addhotreload = (content) => {
   return `${content.toString()}\n\n<script>(`+hotreloadclient.toString()+`)('${socketUrl}')</script>`;
 }
 
+//https://www.bscotch.net/post/create-a-live-reload-server
 const hotreloadclient = (socketUrl) => {
   //hot reload code injected from backend
   //const socketUrl = `ws://${cfg.settings.host}:${cfg.settings.hotreload}`;
