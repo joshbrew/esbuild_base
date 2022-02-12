@@ -19,13 +19,14 @@ function onRequest(request, response) {
     }
 
     //read the file on the server
-    if(fs.statSync(requestURL).isFile()){
+    if(fs.existsSync(requestURL)){
         fs.readFile(requestURL, function(error, content) {
             if (error) {
                 if(error.code == 'ENOENT') { //page not found: 404
                     fs.readFile(cfg.settings.errpage, function(error, content) {
                         response.writeHead(404, { 'Content-Type': 'text/html' }); //set response headers
 
+                        
                         //add hot reload if specified
                         if(process.env.NODEMON && requestURL.endsWith('.html') && typeof hotreload !== 'undefined') {
                             content = hotreload.addhotload(content);
@@ -57,7 +58,7 @@ function onRequest(request, response) {
 
                 response.writeHead(200, { 'Content-Type': contentType }); //set response headers
 
-                
+                //add hot reload if specified
                 if(process.env.NODEMON && requestURL.endsWith('.html') && typeof hotreload !== 'undefined') {
                     content = hotreload.addhotload(content);
                 }
@@ -67,7 +68,7 @@ function onRequest(request, response) {
                 //console.log(content); //debug
             }
         });
-    }
+    } else console.log(`File ${requestURL} does not exist on path!`)
 
     //console.log(response); //debug
 }
