@@ -8,13 +8,15 @@ You can specify https and add an ssl certificate if you follow the instructions.
 
 >1 dependency: `esbuild`
 
-## Backend dev server hot reloading (when editing)
+## Hot reloading (for dev)
 
 `npm run dev` or `npm i --save-dev nodemon && nodemon node_server/server.js`
 
-then `npm run startdev` to use nodemon 
+then `npm run startdev` 
 
-The nodemon dev server also adds basic hot reloading via websocket and clientside code injection (see [nodeserver/server.js](https://github.com/moothyknight/esbuild_base/blob/master/node_server/server.js) for method).
+nodemon restarts the node server automatically when changes to included source files are detected.
+
+The nodemon dev server adds basic frontend hot reloading via websocket and clientside code injection (see [nodeserver/server.js](https://github.com/moothyknight/esbuild_base/blob/master/node_server/server.js) for method).
 
 > 2 dev dependencies: `nodemon` and `ws`
 
