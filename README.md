@@ -1,6 +1,6 @@
 # Minimal [esbuild](https://esbuild.github.io/getting-started/#your-first-bundle) and [Nodejs server test env](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Node_server_without_framework).
 
-To run: `npm run build` to bundle, then `npm start` to run the node server.
+To run: `npm run build` to bundle, then `npm start` to run the node server. It runs at `http://localhost:8000` by default
 
 * OR `npm test` to run both commands in sequence
 
