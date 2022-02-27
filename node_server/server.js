@@ -68,7 +68,11 @@ function onRequest(request, response) {
                 //console.log(content); //debug
             }
         });
-    } else console.log(`File ${requestURL} does not exist on path!`)
+    } else {
+        console.log(`File ${requestURL} does not exist on path!`);
+        response.writeHead(204);
+        response.end();
+    }
 
     //console.log(response); //debug
 }
